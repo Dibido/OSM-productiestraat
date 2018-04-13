@@ -1,0 +1,2 @@
+powershell -Command "(gc ../Exe1/Defines.hpp) -replace '#define DEBUG 0', '#define DEBUG 1' | Out-File -encoding UTF8 ../Exe1/Defines.hpp"
+powershell -Command "(gc ../Exe2/Defines.hpp) -replace '#define DEBUG 0', '#define DEBUG 1' | Out-File -encoding UTF8 ../Exe2/Defines.hpp"

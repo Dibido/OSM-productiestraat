@@ -1,0 +1,20 @@
+lib_LTLIBRARIES = liblib1.la
+
+liblib1_la_SOURCES =	Lib1.cpp	\
+						Object.cpp
+
+liblib1_la_CPPFLAGS = 	$(AM_CPPFLAGS) $(PROJECTTEMPLATE_CPPFLAGS)	\
+						-DPROJECTTEMPLATEDLL=1	\
+						-I $(top_srcdir)/Config
+
+liblib1_la_CFLAGS 	= 	$(AM_CFLAGS) $(PROJECTTEMPLATE_CFLAGS) $(WX_CFLAGS)
+
+liblib1_la_CXXFLAGS = 	$(AM_CXXFLAGS) $(PROJECTTEMPLATE_CXXFLAGS) $(BOOST_CPPFLAGS) $(WX_CXXFLAGS)
+
+liblib1_la_LDFLAGS = 	$(AM_LDFLAGS) $(PROJECTTEMPLATE_LDFLAGS) $(BOOST_LDFLAGS) $(WX_LDFLAGS)
+
+liblib1_la_LIBADD 	=	$(BOOST_LIBS)	\
+						$(SOCKET_LIBS)	\
+						$(WX_LIBS)
+						
+

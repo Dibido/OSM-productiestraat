@@ -1,0 +1,33 @@
+[Exe1/Factory.cpp:110] -> [Exe1/Factory.hpp:35]: (performance, inconclusive) Technically the member function 'Factory::LoadMachineConfiguration' can be static.
+[Exe1/Factory.cpp:189] -> [Exe1/Factory.hpp:36]: (performance, inconclusive) Technically the member function 'Factory::LoadBufferConfiguration' can be static.
+[Exe1/ProductionScheduling.hpp:32]: (performance) Function parameter 'configVector' should be passed by reference.
+[Exe1/LocalMachine.cpp:134] -> [Exe1/LocalMachine.hpp:119]: (performance, inconclusive) Technically the member function 'LocalMachine::getHighestInput' can be static.
+[Exe1/LocalMachine.cpp:151] -> [Exe1/LocalMachine.hpp:125]: (performance, inconclusive) Technically the member function 'LocalMachine::ArePartsTheSame' can be static.
+[Exe1/LocalMachine.cpp:164] -> [Exe1/LocalMachine.hpp:131]: (performance, inconclusive) Technically the member function 'LocalMachine::checkInput' can be static.
+[Exe1/ProductionControl.cpp:92] -> [Exe1/ProductionControl.hpp:140]: (performance, inconclusive) Technically the member function 'ProductionControl::getPartsNeededForOnePart' can be static.
+[Exe1/ProductionScheduling.hpp:32] -> [Exe1/ProductionScheduling.cpp:21]: (style, inconclusive) Function 'processOrder' argument 1 names different: declaration 'configVector' definition 'ProductionLineConfigVector'.
+[Exe1/ProductionScheduling.cpp:21]: (performance) Function parameter 'ProductionLineConfigVector' should be passed by reference.
+[Exe1/ProductionScheduling.cpp:91]: (error) Uninitialized struct member: lastBatch.number_of_machines
+[Exe1/ProductionScheduling.cpp:89]: (error) Uninitialized struct member: lastBatch.number_of_buffers
+[Exe1/ProductionScheduling.cpp:106]: (error) Uninitialized struct member: newProductionLineConfig.totalAmountToProduce
+[Exe1/ProductionScheduling.cpp:106]: (error) Uninitialized struct member: newProductionLineConfig.number_of_machines
+[Exe1/ProductionScheduling.cpp:106]: (error) Uninitialized struct member: newProductionLineConfig.number_of_buffers
+[Exe1/Network/machineNetworkHandler.cpp:163]: (style) The function 'createMachine' is never used.
+[Exe2/ConcreteState.cpp:25]: (style) The function 'doActivity' is never used.
+[Exe1/Network/machineNetworkHandler.cpp:197]: (style) The function 'getStatus' is never used.
+[Exe1/Network/controlNetworkHandler.cpp:198]: (style) The function 'machineBroken' is never used.
+[Exe1/Network/machineNetworkHandler.cpp:222]: (style) The function 'pauseClock' is never used.
+[Exe1/Network/machineNetworkHandler.cpp:229]: (style) The function 'resumeClock' is never used.
+[Exe1/Buffer.cpp:87]: (style) The function 'setId' is never used.
+[Exe1/Buffer.cpp:72]: (style) The function 'setMaxBuffer' is never used.
+[Exe1/Network/machineNetworkHandler.cpp:215]: (style) The function 'startClock' is never used.
+[Exe2/Machine.cpp:91]: (style) The function 'startMachine' is never used.
+[Exe1/Network/machineNetworkHandler.cpp:206]: (style) The function 'startWorking' is never used.
+[Exe1/Network/machineNetworkHandler.cpp:236]: (style) The function 'stopClock' is never used.
+[Exe1/Buffer.cpp:54]: (information) Unmatched suppression: unusedFunction
+[Exe1/Factory.cpp:22]: (information) Unmatched suppression: functionStatic
+[Exe1/LocalMachine.cpp:134]: (information) Unmatched suppression: functionStatic
+[Exe1/LocalMachine.cpp:151]: (information) Unmatched suppression: functionStatic
+[Exe1/LocalMachine.cpp:164]: (information) Unmatched suppression: functionStatic
+[Exe1/ProductionScheduling.cpp:99]: (information) Unmatched suppression: functionStatic
+(information) Cppcheck cannot find all the include files (use --check-config for details)
